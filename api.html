@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="" id=""></a>
+    <script>
+
+
+// const url = "https://api.oceandrivers.com/v1.0/getAemetStation/{stationName}/{period}/"; // Replace {stationName} and {period} with actual values
+
+// // Function to fetch weather data from the specified station and period
+// const fetchWeatherData = async (stationName, period) => {
+//   try {
+//     // Construct the URL with the stationName and period
+//     const requestUrl = url
+//       .replace("{stationName}", stationName)
+//       .replace("{period}", period);
+
+//     // Make the GET request to fetch weather data
+//     const response = await fetch(requestUrl);
+//     if (!response.ok) {
+//       throw new Error('Failed to fetch weather data');
+//     }
+    
+//     // Parse the JSON response
+//     const data = await response.json();
+    
+//     // Log the weather data to the console
+//     console.log(data.TEMPERATURE);
+//     document.querySelector("a").innerText=data.TEMPERATURE;
+//   } catch (error) {
+//     console.error('Error:', error);
+//   }
+// };
+
+// // Example usage: Fetch weather data for a specific station and period
+// fetchWeatherData("lahore", "today");
+
+var country="lahore";
+const apikey ="b228c051b562311b1a2b96426a6992b6"
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${country}&appid=${apikey}&units=metric`;
+const weather= async()=> {
+	const response = await fetch(url);
+	const result = await response.json();
+	console.log(result);
+} 
+weather();
+
+ let a;
+ console.log(typeof a)
+
+
+    </script>
+</body>
+</html>
