@@ -469,7 +469,8 @@ body.nav-active { overflow: hidden; }
 
 .hero-title {
   text-transform: uppercase;
-  word-break: break-all;
+  word-break: keep-all
+
 }
 
 .hero-subtitle {
@@ -927,7 +928,14 @@ body.nav-active { overflow: hidden; }
 
 
 
-
+@media (max-width:400px){
+  .hero-title {
+    text-transform: uppercase;
+    word-break: keep-all;
+    font-size: 2.5rem;
+  
+  }
+}
 
 /**
  * responsive for large than 1200px screen
