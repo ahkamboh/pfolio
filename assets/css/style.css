@@ -925,9 +925,6 @@ body.nav-active { overflow: hidden; }
   .blog-list li:nth-child(2n) .card-banner { order: 1; }
 
 }
-
-
-
 @media (max-width:400px){
   .hero-title {
     text-transform: uppercase;
@@ -936,7 +933,6 @@ body.nav-active { overflow: hidden; }
   
   }
 }
-
 /**
  * responsive for large than 1200px screen
  */
